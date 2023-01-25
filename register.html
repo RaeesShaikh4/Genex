@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="register.css">
+    <link href="demo.php">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <div class="forms">
+            <div class="form Register">
+                <span class="title">Register</span>
+
+
+                <form method="post" action="demo.php" id="register_form">
+                    <div class="input-field">
+
+                        <input type="text" placeholder="EMAIL" name="email" required>
+                        <i class="uil uil-envelope-alt"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" placeholder="PASSWORD" name="password" required>
+                        <i class="uil uil-lock"></i>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" placeholder="Re-type PASSWORD" name="password2" required>
+                        <i class="uil uil-lock"></i>
+
+                    </div>
+
+                    <div class="names">
+
+                        <div class="input-field Fnm">
+                            <input type="text" placeholder="&nbsp;First Name" name="firstname" required>
+                            <i class="uil uil-user"></i>
+                        </div>
+                        <div class="input-field Lnm">
+                            <input type="text" placeholder="Last Name" name="lastname" required>
+                            <i class="uil uil-user"></i>
+                        </div>
+                    </div>
+                    <div class="genders" name="gender">
+                        <input type="radio" name="gender" id="male" required>&nbsp;&nbsp;Male
+                        <input type="radio" name="gender" id="female" required>&nbsp;&nbsp;Female
+
+                    </div>
+                    <div class="select-menu" required>
+                        <div class="select-btn">
+                            <span class="sBtn-text">Select a country</span>
+                            <i class="bx bx-chevron-down"></i>
+                        </div>
+                        <ul class="options" name="country">
+                            <li class="option">
+                                <span class="option-text">-- Select a country --</span>
+                            </li>
+                            <li class="option">
+                                <span class="option-text">India</span>
+                            </li>
+                            <li class="option">
+                                <span class="option-text">Usa</span>
+                            </li>
+                            <li class="option">
+                                <span class="option-text">Saudi arabia</span>
+                            </li>
+                            <li class="option">
+                                <span class="option-text">United kingdom</span>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+
+            <div class="checkbox-text">
+                <div class="checkbox-content">
+                    <input type="checkbox" id="logcheck">
+                    <label for="logCheck" class="text" required>I agree with terms and conditions</label>
+                </div>
+
+                <div class="checkbox-content news">
+                    <input type="checkbox" id="news">
+                    <label for="news" class="text">I want to receive the newsletter</label>
+                </div>
+
+            </div><br>
+
+           
+        </div>
+        <div class="btn">
+            <input class="btn-prinmary" type="submit" name="submit" value="REGISTER">
+        </div> 
+        </form>
+
+    </div>
+    </div>
+    </div>
+    <script src="register.js"></script>
+</body>
+
+</html>

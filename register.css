@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2e4ee;
+}
+
+.container {
+    position: relative;
+    max-width: 400px;
+    /* max-height: 550px; */
+    width: 100%;
+    padding-bottom: 15px;
+    /* height: 100%; */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: o 5px 10px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #ded307;
+}
+
+.container .form {
+    padding: 20px;
+}
+
+.container .form .title {
+    position: relative;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.form .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    border-radius: 25px;
+}
+
+.form .input-field {
+    background-color: red;
+    position: relative;
+    height: 35px;
+    width: 100%;
+    max-width: 335px;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.input-field input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    outline: none;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.input-field .uil {
+    position: absolute;
+    top: 15%;
+    margin-left: 5px;
+}
+
+.input-field .uis {
+    position: absolute;
+    top: 15%;
+    margin-left: 5px;
+}
+
+.names {
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    border-radius: 0 0 5px 5px;
+    margin-right: 15px;
+
+
+}
+
+.Fnm {
+    width: 100%;
+    height: 100%;
+    max-width: 35%;
+    margin-top: 2px;
+}
+
+.Lnm {
+    position: absolute;
+    width: 100%;
+    max-width: 30%;
+    margin-left: 50px;
+    /* padding: 0x 94px 0 0; */
+    /* background-color: black; */
+}
+
+.genders {
+    display: flex;
+    padding: 20px;
+}
+
+#female {
+    margin-left: 20px;
+}
+
+.select-menu {
+    width: 300px;
+    margin-left: 10px;
+    margin-top: -5px;
+}
+
+.select-menu:hover .options {
+    display: block;
+}
+
+.select-menu .select-btn {
+    display: flex;
+    height: 35px;
+    width: 335px;
+    border: ridge;
+    padding: 10px;
+    background-color: #fff;
+    font-size: 14px;
+    color: grey;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+
+
+.select-menu .options {
+    position: relative;
+    background-color: #fff;
+    display: none;
+}
+
+.select-menu.active .options {
+    display: none;
+}
+
+.options .option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options .option:hover {
+    background: #c1ccde;
+}
+
+.option .option-text {
+    font-size: 14px;
+}
+
+.checkbox-text {
+    position: absolute;
+    margin-left: 30px;
+}
+
+.btn {
+    display: flex;
+    background-color: #ded307;
+
+    height: 35px;
+    width: 100%;
+    max-width: 335px;
+    margin-top: 65px;
+    margin-left: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-prinmary {
+    border: none;
+    background: none;
+    color: white;
+    /* background: none; */
+}
+
+.btn .btn-primary:hover{
+    background: #b0a509;
+
+}
